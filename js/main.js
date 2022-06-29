@@ -11,7 +11,7 @@ $('.item').on('click',function(e){
 
 
 
-    $('.close').on('click',function(){
+    $('.btnClose, .wrapClose').on('click',function(){
 
         $('.view').fadeOut();
         $('.view fogure').children().remove();
@@ -22,3 +22,19 @@ $('.item').on('click',function(e){
 
 
 
+$('.box').on('click',function(e){
+    e.preventDefault(); 
+
+    $('.view').fadeIn();
+
+    let pic = $(this).find('.pic').html();
+    $('.view figure').html(pic);
+
+});
+
+
+$('.btnClose, .wrapClose').on('click',function(){
+
+    $('.view').hide();
+
+});
