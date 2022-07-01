@@ -34,7 +34,7 @@ header{
 
 
 .gnb{
-    width: 600px;
+    width: 37%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,18 @@ header{
     margin-right: auto;
     padding-top: 20px;
 }
+
+
+.gnb li{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* 왜 오른쪽으로 처지지? 수정 필 ㅜㅜ */
+}
+
+
+/* ------------------------여기까지 헤더영역------------------------ */
+
+
 
 
 .s1{
